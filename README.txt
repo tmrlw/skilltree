@@ -2,30 +2,33 @@ skilltree
 
 >> árbol de ficheros:
 
-	skilltree
-	├── app.py
-	├── README.txt
-	├── static
-	│   ├── css
-	│   │   └── styles.css
-	│   ├── img
-	│   │   ├── background.jpg
-	│   │   ├── lenguajes
-	│   │   │   ├── css
-	│   │   │   │   └── csslogo.png
-	│   │   │   ├── html
-	│   │   │   │   └── htmllogo.png
-	│   │   │   ├── javascript
-	│   │   │   │   └── jslogo.png
-	│   │   │   ├── jquery
-	│   │   │   │   └── jquerylogo.png
-	│   │   │   └── nodejs
-	│   │   │       └── nodejslogo.png
-	│   │   └── misc
-	│   │       └── musthave.png
-	│   └── js
-	└── templates
-	    └── index.html
+skilltree
+├── app.py
+├── documentacion.txt
+├── LICENSE
+├── README.txt
+├── static
+│   ├── css
+│   │   └── styles.css
+│   ├── img
+│   │   ├── background.jpg
+│   │   ├── lenguajes
+│   │   │   ├── css
+│   │   │   │   └── csslogo.png
+│   │   │   ├── html
+│   │   │   │   └── htmllogo.png
+│   │   │   ├── javascript
+│   │   │   │   └── jslogo.png
+│   │   │   ├── jquery
+│   │   │   │   └── jquerylogo.png
+│   │   │   └── nodejs
+│   │   │       └── nodejslogo.png
+│   │   └── misc
+│   │       └── musthave.png
+│   └── js
+└── templates
+    └── index.html
+
 
 >> sobre flask:
 
