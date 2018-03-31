@@ -1,0 +1,8 @@
+Git Tutorial for Beginners: Command-Line Fundamentals
+https://www.youtube.com/watch?v=HVsySz-h9r4
+
+Curso Flask
+https://tinyurl.com/flask-tut-es
+
+Three Flaws in Software Design - 4 Partes (Código en Python) - Google Devs
+https://www.youtube.com/watch?v=JOAq3YN45YE

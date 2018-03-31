@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skill Tree</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- CSS de SkillTree -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/styles.css') }}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Skill Tree</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Lista</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sun-Tzu
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Ir a Mi Perfil</a>
+          <a class="dropdown-item" href="#">Ver Skills</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Cerrar Sesión</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Skill..." aria-label="Search">
+      <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar!</button>
+    </form>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <img src="{{ url_for('static', filename = 'img/lenguajes/javascript/jslogo.png') }}"  alt="JavaScript" class="logo rounded mx-auto d-block">
+  <h1 class="display-4 text-center">JavaScript</h1>
+  <p class="descripcion-lenguaje text-center mx-auto">
+    JavaScript es un lenguaje de programación interpretado. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.
+  </p>
+
+  <div class="mx-auto" >
+    <a href="#" class="btn btn-primary btn-block btn-skills">Agregar a Mis Skills!</a>
+  </div>
+
+</div>
+
+
+<div class="cuerpo mx-auto">
+  <div class="row  mx-auto">
+
+    <!-- REQUISITOS OBLIGATORIOS -->
+
+    <div class="col-sm mx-auto">  
+      <div class="row">
+
+          <div class="alert alert-danger" role="alert">
+            Requisitos
+          </div>
+
+          <div class="card-requisitos text-center">
+            <div class="card-body">
+              <h1 class="card-title">Node.JS</h1>
+              <i class="far fa-thumbs-up"></i>
+              <i class="far fa-thumbs-down"></i> 
+            </div>
+          </div>
+
+          <div class="card-requisitos text-center">
+            <div class="card-body">
+              <h1 class="card-title">HTML 5</h1>
+              <i class="far fa-thumbs-up"></i>
+              <i class="far fa-thumbs-down"></i> 
+            </div>
+          </div>
+
+          <div class="card-requisitos text-center">
+            <div class="card-body">
+              <h1 class="card-title">CSS 3</h1>
+              <i class="far fa-thumbs-up"></i>
+              <i class="far fa-thumbs-down"></i> 
+            </div>
+          </div>
+
+          <div class="card-requisitos text-center">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-danger">Sugerir Otros</a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- PARA QUE APRENDER -->
+
+    <div class="col-sm mx-auto">
+      <div class="row">
+
+          <div class="alert alert-success" role="alert">
+            Sobre JavaScript
+          </div>
+
+          <div class="card-paraque text-center">
+            <div class="card-body">
+              <h5 class="card-title">Usos Generales</h5>
+              <p class="card-text">JavaScript se utiliza principalmente del lado del cliente (es decir...</p>
+            </div>
+          </div>
+
+          <div class="card-paraque text-center">
+            <div class="card-body">
+              <h5 class="card-title">Cursos Recomendados</h5>
+              <p class="card-text">Conocé la lista de preferidos por los usuarios del sitio y los recomendados.</p>
+            </div>
+          </div>
+
+          <div class="card-paraque text-center">
+            <div class="card-body">
+              <h5 class="card-title">Participá del Foro</h5>
+              <p class="card-text">Preguntá, respondé, proponé mejoras y mucho más.</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- PREREQUISITOS PARA -->
+
+    <div class="col-sm mx-auto">
+      <div class="row">
+          <div class="alert alert-info" role="alert">
+            Prerequisito Para...
+          </div>
+
+          <div class="card-prerequisitos text-center">
+            <div class="card-body">
+              <h1 class="card-title">jQuery</h1>
+              <i class="far fa-thumbs-up"></i>
+              <i class="far fa-thumbs-down"></i> 
+            </div>
+          </div>
+
+          <div class="card-prerequisitos text-center">
+            <div class="card-body">
+              <h1 class="card-title">Node.JS</h1>
+              <i class="far fa-thumbs-up"></i>
+              <i class="far fa-thumbs-down"></i> 
+            </div>
+          </div>
+
+          <div class="card-prerequisitos text-center">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary">Sugerir Otros</a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
